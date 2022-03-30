@@ -12,7 +12,7 @@ export const List: React.FC = () => {
 
     useEffect( ()=> {
         dispatch(fetchUsers())
-    })
+    }, [])
 
     return(
         <StyledList>
