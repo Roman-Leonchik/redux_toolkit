@@ -1,0 +1,15 @@
+{
+  "posts": [
+    {
+      "title": "First title",
+      "body": "First post",
+      "id": 1
+    },
+    {
+      "title": "New title",
+      "body": "Delete post",
+      "id": 2
+    }
+  ],
+  "comments": []
+}
