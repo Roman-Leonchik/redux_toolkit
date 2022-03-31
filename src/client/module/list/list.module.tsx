@@ -8,7 +8,7 @@ import {
 
 export const List: React.FC = () => {
     const dispatch = useAppDispatch();
-    const { users } = useAppSelector( state => state.userReducer )
+    const { users, isLoading, error } = useAppSelector( state => state.userReducer )
 
     useEffect( ()=> {
         dispatch(fetchUsers())
@@ -17,6 +17,8 @@ export const List: React.FC = () => {
     return(
         <StyledList>
             <StyledContainer>
+                {isLoading && <h2>Идет загрузка</h2>}
+                {error && <h2>{error}</h2>}
                 {JSON.stringify(users, null, 2)}
             </StyledContainer>
         </StyledList>
