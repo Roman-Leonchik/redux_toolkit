@@ -4,6 +4,9 @@ import { IPost } from "../../../providers/store/models/IPost";
 import { PostModals } from "../post-modals.module";
 import {
     StyledInputWrapp,
+    StyledInputText,
+    StyledText,
+    StyledCreateButton,
 } from "./create-post.styled";
 
 interface IProps {
@@ -32,16 +35,16 @@ export const CreatePostModals: React.FC<IProps> = ({ closeModal }) => {
     }
 
     return(
-        <PostModals closeModal={closeModal}>
+        <PostModals closeModal={closeModal} titleModal="Create post">
             <StyledInputWrapp>
-                Title
-                <input type="text" onInput={handlerTitleValue} value={valueTitle}/>
+                <StyledText>Title</StyledText>
+                <StyledInputText type="text" onInput={handlerTitleValue} value={valueTitle}/>
             </StyledInputWrapp>
             <StyledInputWrapp>
-                Body
-                <input type="text" onInput={handlerBodyValue} value={valueBody}/>
+                <StyledText>Body</StyledText>
+                <StyledInputText type="text" onInput={handlerBodyValue} value={valueBody}/>
             </StyledInputWrapp>
-            <input type="submit" value="Create post" onClick={handlerCreatePost}/>
+            <StyledCreateButton type="submit" value="Create post" onClick={handlerCreatePost}/>
         </PostModals>
     )
 

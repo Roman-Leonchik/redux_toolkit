@@ -12,6 +12,7 @@ const globalStylesCss = css`
         font-size: 18px;
         line-height: 1.2;
         font-family: "Open Sans", sans-serif;
+        background-color: #eaecf1;
     }
 `;
 

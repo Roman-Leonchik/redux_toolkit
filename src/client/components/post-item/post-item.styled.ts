@@ -6,7 +6,7 @@ interface IButton {
 
 export const StyledPostItem = styled.div`
     padding: 10px;
-    box-shadow: 0px 0px 10px rgb(48 130 255 / 50%);
+    background-color: #fff;
     border-radius: 10px;
     font-size: 16px;
     max-width: 600px;

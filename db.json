@@ -1,4 +1,10 @@
 {
-  "posts": [],
+  "posts": [
+    {
+      "title": "Test post",
+      "body": "Body post new post",
+      "id": 3
+    }
+  ],
   "comments": []
 }

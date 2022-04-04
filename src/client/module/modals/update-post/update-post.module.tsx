@@ -34,7 +34,7 @@ export const UpdatePostModals: React.FC<IProps> = ({ closeModal, post }) => {
     }
 
     return(
-        <PostModals closeModal={closeModal}>
+        <PostModals closeModal={closeModal} titleModal="Change modal">
             <StyledInputWrapp>
                 Title
                 <input type="text" onInput={handlerTitleValue} value={valueTitle}/>
