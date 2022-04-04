@@ -8,8 +8,9 @@ export const StyledModals = styled.div`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 500px;
-    border: 1px solid #000;
+    width: 400px;
+    box-shadow: rgb(46 44 47) 0px 0px 5px;
+    border-radius: 5px;
 `;
 
 export const StyledCloseModal = styled.button`

@@ -1,8 +1,10 @@
 import styled from "styled-components";
+import Image from "../../images/pattern-bg.png";
 
 export const StyledHeader = styled.div`
     padding: 10px 0;
-    background-color: #333;
+    background-color: #fff;
+    background-image: url(${Image});
 `;
 
 export const StyledContainer = styled.div`
@@ -14,8 +16,8 @@ export const StyledContainer = styled.div`
 export const StyledText = styled.h1`
     padding: 0;
     margin: 0;
-    font-size: 32px;
-    color: #eee;
+    font-size: 28px;
+    color: #fff;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.5px;

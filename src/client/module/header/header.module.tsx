@@ -8,7 +8,7 @@ export const Header = () => {
     return (
         <StyledHeader>
             <StyledContainer>
-                <StyledText>Redux Toolkit</StyledText>
+                <StyledText>Post</StyledText>
             </StyledContainer>
         </StyledHeader>
     )

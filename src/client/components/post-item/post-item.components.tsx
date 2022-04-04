@@ -4,7 +4,8 @@ import { useModals } from "../../providers/modals/modals.providers";
 import {
     StyledPostItem,
     StyledPostTitle,
-    StyledPostDelete,
+    StyledButtonList,
+    StyledButton,
 } from "./post-item.styled";
 
 interface IProps {
@@ -24,8 +25,10 @@ export const PostItem: React.FC<IProps> = ({post, remove}) => {
         <StyledPostItem>
             <StyledPostTitle>{post.title}</StyledPostTitle>
             <p>{post.body}</p>
-            <StyledPostDelete onClick={handleRemove}>Delete</StyledPostDelete>
-            <StyledPostDelete onClick={() => openUpdatePostModal(post)}>Change post</StyledPostDelete>
+            <StyledButtonList>
+                <StyledButton onClick={() => openUpdatePostModal(post)}>Change post</StyledButton>
+                <StyledButton onClick={handleRemove} deleteColor>Delete</StyledButton>
+            </StyledButtonList>
         </StyledPostItem>
     )
 }
