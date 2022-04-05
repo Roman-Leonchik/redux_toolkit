@@ -5,13 +5,13 @@ interface IButton {
 }
 
 export const StyledPostItem = styled.div`
-    padding: 10px;
+    padding: 20px;
     background-color: #fff;
     border-radius: 10px;
     font-size: 16px;
-    max-width: 600px;
+    max-width: 500px;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
     &:not(:last-child){
         margin-bottom: 20px;
     }
@@ -22,27 +22,34 @@ export const StyledPostTitle = styled.h3`
     margin: 0 0 15px;
 `;
 
+export const StyledPostText = styled.p`
+    margin: 0;
+`;
+
 export const StyledButtonList = styled.div`
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     gap: 15px;
+    margin-bottom: 10px;
 `;
 
 export const StyledButton = styled.button<IButton>`
     border: none;
-    border: 2px solid ${({deleteColor}) => deleteColor ? "#ff0030" : "#516f2f"};
-    background: ${({deleteColor}) => deleteColor ? "#ff0030" : "#516f2f"};
-    color: #fff;
-    padding: 5px 10px;
+    background: none;
+    color: ${({deleteColor}) => deleteColor ? "#ff0030" : "#5457b6"};
+    padding: 0;
     cursor: pointer;
     transition: 0.3s;
+    opacity: 0.5;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
     &:hover {
-        background: #fff;
-        color: ${({deleteColor}) => deleteColor ? "#ff0030" : "#516f2f"};
+        opacity: 1;
     }
 `;
