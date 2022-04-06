@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.js": "/redux_toolkit/static/js/main.dad93ea9.js",
+    "static/media/pattern-bg.png": "/redux_toolkit/static/media/pattern-bg.a60a3c85aa8b88aac4b7.png",
+    "index.html": "/redux_toolkit/index.html",
+    "main.dad93ea9.js.map": "/redux_toolkit/static/js/main.dad93ea9.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.dad93ea9.js"
+  ]
+}
