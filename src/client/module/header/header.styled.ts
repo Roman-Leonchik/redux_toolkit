@@ -1,10 +1,11 @@
 import styled from "styled-components";
 import Image from "../../images/pattern-bg.png";
 
-export const StyledHeader = styled.div`
+export const StyledHeader = styled.header`
     padding: 10px 0;
     background-color: #fff;
     background-image: url(${Image});
+    background-size: cover;
 `;
 
 export const StyledContainer = styled.div`

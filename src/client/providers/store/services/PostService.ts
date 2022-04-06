@@ -6,12 +6,15 @@ export const postAPI = createApi({
     baseQuery: fetchBaseQuery({baseUrl: "http://localhost:5000"}),
     tagTypes: ["Post"],
     endpoints: (build) => ({
-        fetchAllPosts: build.query<IPost[], number>({
-            query: (limit: number = 10) => ({
+        fetchAllPosts: build.query<IPost[], void>({
+            query: () => ({
                 url: "/posts",
-                params: {
-                    _limit: limit
-                }
+            }),
+            providesTags: result => ["Post"]
+        }),
+        fetchPagePosts: build.query<IPost[], number>({
+            query: (page: number) => ({
+                url: `/posts?_page=${page}&_limit=3`,
             }),
             providesTags: result => ["Post"]
         }),

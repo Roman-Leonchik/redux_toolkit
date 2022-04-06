@@ -19,6 +19,7 @@ export const StyledModals = styled.div`
     transform: translate(-50%, -50%);
     width: 400px;
     border-radius: 10px;
+    max-width: calc(100% - 30px);
 `;
 
 export const StyledTitleContainer = styled.div`
