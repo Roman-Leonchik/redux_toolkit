@@ -1,0 +1,40 @@
+{
+  "posts": [
+    {
+      "title": "Test post",
+      "body": "Body post new post",
+      "id": 3
+    },
+    {
+      "title": "test 2",
+      "body": "rewrwer",
+      "id": 4
+    },
+    {
+      "title": "rwerwer 4",
+      "body": "fdsfsdf",
+      "id": 6
+    },
+    {
+      "title": "test 5",
+      "body": "dsdfg",
+      "id": 7
+    },
+    {
+      "title": "trert 6",
+      "body": "rwwwer ",
+      "id": 8
+    },
+    {
+      "title": "test 7",
+      "body": "werwsv",
+      "id": 9
+    },
+    {
+      "title": "test 8",
+      "body": "asdasdasdas",
+      "id": 10
+    }
+  ],
+  "comments": []
+}
